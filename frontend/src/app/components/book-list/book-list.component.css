@@ -1,0 +1,90 @@
+/* Contenedor principal */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+/* Estilo de cada tarjeta */
+.card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del libro */
+.card mat-card-title {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Subtítulo del autor */
+.card mat-card-subtitle {
+  font-size: 1rem;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Descripción */
+.card mat-card-content {
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.6;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Imagen del libro */
+.card mat-card-title-group img {
+  max-width: 120px;
+  max-height: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card mat-card-title {
+    font-size: 1.5rem;
+  }
+
+  .card mat-card-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .card mat-card-content {
+    font-size: 0.9rem;
+  }
+
+  .card mat-card-title-group img {
+    max-width: 100px;
+    max-height: 150px;
+  }
+}
+
+

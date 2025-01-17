@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Lista de libros</h1>
+  <div *ngFor="let book of books">
+    <mat-card class="card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ book.title }}</mat-card-title>
+
+          <mat-card-subtitle><b>Autor:</b> {{ book.author }}</mat-card-subtitle>
+          <mat-card-subtitle><b>Sinopsis:</b> {{ book.subtitle }}</mat-card-subtitle>
+          <img
+            mat-card-lg-image
+            [src]="book.urlImg"
+            alt="Imagen del employee"
+            width="300"
+            height="200"
+            class="book-image"
+          >
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <b>Descripción:</b> {{ book.description }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
